@@ -1,0 +1,51 @@
+{
+	"expo": {
+		"name": "movies",
+		"slug": "movies",
+		"scheme": "movies",
+		"version": "1.0.0",
+		"orientation": "portrait",
+		"icon": "./assets/images/icon.png",
+		"userInterfaceStyle": "light",
+		"splash": {
+			"image": "./assets/images/splash.png",
+			"resizeMode": "cover",
+			"backgroundColor": "#262626"
+		},
+		"ios": {
+			"supportsTablet": false,
+			"bundleIdentifier": "com.aymvn.movies"
+		},
+		"android": {
+			"adaptiveIcon": {
+				"foregroundImage": "./assets/images/adaptive-icon.png",
+				"backgroundColor": "#FF000000"
+			},
+			"package": "com.aymvn.movies"
+		},
+		"web": {
+			"favicon": "./assets/images/favicon.png"
+		},
+		"plugins": [
+			"expo-router",
+			"expo-font",
+			[
+				"expo-build-properties",
+				{
+					"android": {
+						"usesCleartextTraffic": true
+					}
+				}
+			],
+			"expo-asset"
+		],
+		"extra": {
+			"router": {
+				"origin": false
+			},
+			"eas": {
+				"projectId": "6da2508c-2fbe-4d76-9357-677e76c95676"
+			}
+		}
+	}
+}
